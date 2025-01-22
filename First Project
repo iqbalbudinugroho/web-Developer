@@ -1,0 +1,36 @@
+import java.util.Scanner;
+public class CollegeEntranceTest {
+
+    public static void main(String[] args) 
+    {
+        String valdictorian;
+        double gpa;
+        int totalStudents,satScore;
+        boolean qualify=false;
+
+        Scanner reader= new Scanner(System.in);
+        System.out.println("Program ini akan menentukan apakah kalian bisa masuk institut teknologi dirgantara ini ");
+        System.out.println("Tolong ikuti pertanyaan ini ya");
+        System.out.println(" Berapa banyak siswa yang bersekolah di sekolah anda? ");
+        totalStudents=reader.nextInt();
+
+        if (totalStudents>1400) {
+            System.out.println("Apakah anada lulusan terbaik di sekolah anda");
+            valdictorian=reader.next();
+            if(valdictorian.equals("y"))
+            qualify=true;
+        }
+        if(!qualify){
+            System.out.println("Berapa rata=rata nilai anda pada skala 4.0?");
+            gpa=reader.nextDouble();
+            System.out.println("Berapa skor SAT anda?");
+            satScore=reader.nextInt();
+            if(gpa>=4.0 && satScore>=1100 ||gpa>=3.0 && satScore==1300 ||gpa>=3.0 && satScore>=1500)
+            qualify=true;
+        }
+        if(qualify)
+        System.out.println("Selamat! anda memenuhi syarat masuk ke Intitut teknologi dirgantara adisucipto ");
+        else
+        System.out.println("Maaf anda tidak memenuhi syarat masuk institut teknologi dirgantara adisucipto");
+    }
+}
