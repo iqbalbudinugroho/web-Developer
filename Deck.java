@@ -12,10 +12,12 @@ public class Deck {
         }
     }
 
-    public void Print(){
-        for(int i = 0; i < cardArray.length; i++)
-        System.out.println(cardArray[i]);
+    public void Print() {
+        for (int i = 0; i < cardArray.length; i++) {
+            System.out.println(cardArray[i]);
+        }
     }
+    
     public void shuffle() {
         int c1, c2;
         Card temp;
@@ -36,4 +38,9 @@ public class Deck {
         }
     }
 }
+
+    public Card deal() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'deal'");
+    }
 }

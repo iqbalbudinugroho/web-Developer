@@ -1,6 +1,6 @@
 public class Hand {
     private Card[] cardArray = new Card[5];
-    private int numCards = 0;
+    int numCards = 0;
 public Hand(Card c1, Card c2){
     cardArray[0] = c1;
     cardArray[1] = c2;

@@ -3,7 +3,7 @@ public class Main {
     
     public static void main(String[] args) {
         Scanner reader = new Scanner(System.in);
-        Deck deck = new Deck();
+        Deck deck = new Deck(0, 0);
         Hand dealer = new Hand(deck.deal(), deck.deal());
         Hand player = new Hand(deck.deal(),deck.deal());
         int playerPoints = 0,dealerPoints = 0;
