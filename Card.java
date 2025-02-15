@@ -2,6 +2,7 @@
 public class Card {
 String suit,name;
 int points;
+int Card;
 Card(int n1, int n2){
     suit = getSuit(n1);
     name = getName(n2);
