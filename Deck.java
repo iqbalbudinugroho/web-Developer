@@ -39,8 +39,5 @@ public class Deck {
     }
 }
 
-    public Card deal() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'deal'");
-    }
+    
 }
